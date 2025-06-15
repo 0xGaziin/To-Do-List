@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 
 import Tasks from './components/Tasks.jsx'; // - The component.
+import AddTask from './components/AddTask.jsx';
 
 const App = () => {
 	// - An example of tasks:
@@ -16,11 +17,12 @@ const App = () => {
 			title: 'Read a book.',
 			completed: true,
 		}
-	])
+	]);
 
 	return (
 		<>
 			<div className='container'>
+				<AddTask />
 				<Tasks tasks={tasks}/>
 			</div>
 		</>
